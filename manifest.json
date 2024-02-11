@@ -1,0 +1,23 @@
+{
+    "manifest_version": 3,
+    "name": "Thanos Snap",
+    "description": "Element will disappear when clicked on it",
+    "version": "0.0.1",
+    "author": "vikashtamu99@gmail.com",
+    "action":{
+        "default_popup": "./popup/popup.html"
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["./script/contentscript.js"],
+            "run_at": "document_idle"
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [ "pop.mp3", "pop.wav" ],
+            "matches": [ "<all_urls>" ]
+        }
+    ]
+}

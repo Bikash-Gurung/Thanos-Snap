@@ -1,0 +1,1 @@
+Thanos Snap chrome extension is created as a fun project. Whichever element will be clicked in the UI, it will disappear from the screen.
